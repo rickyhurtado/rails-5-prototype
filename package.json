@@ -1,5 +1,14 @@
 {
   "name": "prototype",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "bulma": "^0.4.4",
+    "jquery": "^3.2.1"
+  },
+  "version": "0.0.0",
+  "description": "Rails 5 Prototype JS Libraries",
+  "main": "libraries.js",
+  "repository": "git@github.com:rickyhurtado/rails-5-prototype",
+  "author": "Ricky Hurtado <odatruh.ykcir@gmail.com>",
+  "license": "MIT"
 }

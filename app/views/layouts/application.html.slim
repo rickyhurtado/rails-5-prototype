@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    meta charset='utf-8'
+    title = set_html_title(yield :title)
+    meta content='width=device-width, initial-scale=1' name='viewport'
+    meta content='Rails 5 Prototype' name='description'
+    meta content='ie=edge' http-equiv='x-ua-compatible'
+    = csrf_meta_tags
+    = stylesheet_link_tag 'application'
+    = javascript_include_tag 'application'
+    = yield :javascript_includes_before
+  body
+    = render 'layouts/blocks/header'
+    main.main-content role='main' id="#{yield :page_id}"
+      noscript
+        p JavaScript must be enabled to make this application works.
+      = yield
+    = render 'layouts/blocks/footer'
+    = yield :javascript_includes_after
