@@ -1,5 +1,11 @@
 .container
-  h1.title Rails 5 Prototype
-  h2.subtitle Yet another Rails component-based application
+  h1.title = page.title
+  h2.subtitle = page.subtitle
 
-- content_for :page_id, 'homePage'
+= render page.first_block_path, data: page.data.first_block
+= render page.second_block_path, data: page.data.second_block
+= render page.third_block_path, data: page.data.third_block
+
+- content_for :title, page.title
+- content_for :description, page.subtitle
+- content_for :page_id, page.id
