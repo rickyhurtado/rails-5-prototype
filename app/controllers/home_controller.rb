@@ -2,7 +2,8 @@ class HomeController < ApplicationController
   def index
     render locals: {
       page: HomePage.new(datasource.page_data),
-      ruby_on_rails: ruby_on_rails
+      ruby_on_rails: ruby_on_rails,
+      rails_casts: rails_casts
     }
   end
 
@@ -14,5 +15,9 @@ class HomeController < ApplicationController
 
     def ruby_on_rails
       Home::Index::RubyOnRailsOrgComponent.new
+    end
+
+    def rails_casts
+      Home::Index::RailsCastsComponent.new
     end
 end

@@ -6,7 +6,10 @@
   data: page.data.first_block,
   ruby_on_rails: ruby_on_rails
 
-= render page.second_block_path, data: page.data.second_block
+= render page.second_block_path,
+  data: page.data.second_block,
+  rails_casts: rails_casts
+
 = render page.third_block_path, data: page.data.third_block
 
 - content_for :title, page.title
