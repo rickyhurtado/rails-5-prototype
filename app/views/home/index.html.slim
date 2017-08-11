@@ -2,7 +2,10 @@
   h1.title = page.title
   h2.subtitle = page.subtitle
 
-= render page.first_block_path, data: page.data.first_block
+= render page.first_block_path,
+  data: page.data.first_block,
+  ruby_on_rails: ruby_on_rails
+
 = render page.second_block_path, data: page.data.second_block
 = render page.third_block_path, data: page.data.third_block
 
