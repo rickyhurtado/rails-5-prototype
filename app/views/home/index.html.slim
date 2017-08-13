@@ -10,7 +10,9 @@
   data: page.data.second_block,
   rails_casts: rails_casts
 
-= render page.third_block_path, data: page.data.third_block
+= render page.third_block_path,
+  data: page.data.third_block,
+  rails_links: rails_links
 
 - content_for :title, page.title
 - content_for :description, page.subtitle

@@ -11,6 +11,13 @@ class HomeDatasource
     })
   end
 
+  def rails_links
+    @rails_links ||= [
+      OpenStruct.new({ text: 'Ruby on Rails', url: 'http://rubyonrails.org/' }),
+      OpenStruct.new({ text: 'RailsCasts', url: 'http://railscasts.com/' })
+    ]
+  end
+
   # Start fetching content from database in datasource
   # class instead in the controller class
   def first_block_datasource

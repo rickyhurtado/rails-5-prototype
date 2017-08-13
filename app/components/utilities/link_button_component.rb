@@ -1,18 +1,14 @@
 class Utilities::LinkButtonComponent
+
+  attr_accessor :text, :link, :target
+
   def initialize
+    @text = ''
+    @link = ''
+    @target = '_self'
   end
 
   def component_path
     'components/utilities/link_button'
-  end
-
-  def text
-  end
-
-  def link
-  end
-
-  def target
-    '_self'
   end
 end
