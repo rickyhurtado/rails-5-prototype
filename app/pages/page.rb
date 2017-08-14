@@ -21,7 +21,7 @@ class Page
     # Override through inheritance
     def options
       {
-        title: 'Rails 5 Prototype',
+        title: 'Home',
         subtitle: 'Yet another Rails component-based application'
       }
     end
