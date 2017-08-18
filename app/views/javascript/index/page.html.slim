@@ -1,0 +1,8 @@
+.container
+  h1.title = page.title
+  h2.subtitle = page.subtitle
+
+= render page.description_path
+
+- content_for :title, page.title
+- content_for :description, page.subtitle
