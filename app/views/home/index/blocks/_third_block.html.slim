@@ -4,11 +4,14 @@
     h4 = data.title
     p This line is written directly in the third block file.
     p
-      | The buttons below are rendered via&nbsp;
+      | The buttons below are rendered via
+      = ' '
       strong Home::Index::RailsLinksComponent
-      | &nbsp;owned by&nbsp;
+      |  owned by
+      = ' '
       strong Home#index
-      | &nbsp;controller by instantiating the&nbsp;
+      |  controller by instantiating the
+      = ' '
       strong Utilities::LinkButtonComponent
       | .
     - rails_links.link_buttons.each do |link_button|

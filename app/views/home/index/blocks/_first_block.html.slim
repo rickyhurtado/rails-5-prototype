@@ -5,9 +5,11 @@
     p This line is written directly in the first block file.
     p = data.description
     p
-      | The button below is rendered via&nbsp;
+      | The button below is rendered via
+      = ' '
       strong Home::Index::RubyOnRailsOrgComponent
-      | &nbsp;owned by&nbsp;
+      |  owned by
+      = ' '
       strong Home#index
-      | &nbsp;controller.
+      |  controller.
     p = render ruby_on_rails.component_path, ruby_on_rails: ruby_on_rails

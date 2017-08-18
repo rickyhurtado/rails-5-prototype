@@ -4,11 +4,14 @@
     h4.title = data.title
     p This line is written directly in the second block file.
     p
-      | The button below is rendered via&nbsp;
+      | The button below is rendered via
+      = ' '
       strong Home::Index::RailsCastsComponent
-      | &nbsp;owned by&nbsp;
+      |  owned by
+      = ' '
       strong Home#index
-      | &nbsp;controller by extending the&nbsp;
+      |  controller by extending the
+      = ' '
       strong Utilities::LinkButtonComponent
       | .
     p = render rails_casts.component_path, link_button: rails_casts
