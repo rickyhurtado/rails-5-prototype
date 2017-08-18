@@ -13,6 +13,10 @@ class HomePage < Page
     "#{path_to_home_blocks}/third_block"
   end
 
+  def fourth_block_path
+    "#{path_to_home_blocks}/fourth_block"
+  end
+
   private
 
     def path_to_home_blocks

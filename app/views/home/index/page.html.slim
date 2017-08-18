@@ -14,6 +14,15 @@
   data: page.data.third_block,
   rails_links: rails_links
 
+= render page.fourth_block_path
+
 - content_for :title, page.title
 - content_for :description, page.subtitle
 - content_for :page_id, page.id
+
+- content_for :javascript_includes_after do
+  = javascript_include_tag page.js_path
+  javascript:
+    document.addEventListener('DOMContentLoaded', function(){
+      App.Pages.Home.init();
+    });

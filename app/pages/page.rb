@@ -22,7 +22,9 @@ class Page
     def options
       {
         title: 'Home',
-        subtitle: 'Yet another Rails component-based application'
+        subtitle: 'Yet another Rails component-based application',
+        id: 'home-page',
+        js_path: 'home'
       }
     end
 end
