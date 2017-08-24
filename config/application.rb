@@ -14,11 +14,6 @@ module Prototype
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
-
-    config.autoload_paths += Dir["#{config.root}/components"]
-    config.autoload_paths += Dir["#{config.root}/datasources"]
-    config.autoload_paths += Dir["#{config.root}/app/pages"]
-
     # Precompile additional assets.
     # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
     config.assets.precompile += %w(
